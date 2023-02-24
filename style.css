@@ -1,0 +1,138 @@
+/* see the brand guide for colors, fonts, and images in CodePen: 
+https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
+
+
+h1{font-family: 'Poppins', sans-serif;}
+
+p{font-family: 'Lato', sans-serif;
+line-height: 200%;}
+
+.header{
+  background-color:#082B59;
+  color:white;
+  font-family: 'Lato', sans-serif;}
+
+a{
+color:white;
+font-family: 'Lato', sans-serif;}
+
+.footer{
+  background-color:#082B59;
+  color:white;
+  text-align: center;}
+
+.logo{
+  display:block;
+  width:120px;
+  margin: 0 auto;
+}
+
+
+.navigation{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content:center;
+}
+
+.navigation > div{
+  width: 120px;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.fa-solid{
+  color:white;
+  margin-right: 5px;
+}
+
+.divider{
+  height:10px;
+    width:100%;
+  background-color:#D98555;
+}
+
+.card{
+  background-color:#59331D;
+  width:300px;
+  border-radius:10px;
+  }
+
+.card p{
+  color:white; 
+  margin:10px;
+  padding: 10px;
+}
+
+.cardimg
+{width:100%;
+  border-radius:25px 25px 0 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  text-align: left;
+  justify-content:center;
+  gap: 10px;
+  max-width:1000px;
+  margin:0px auto;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 80%;
+  margin: 10px;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 100%;
+  margin:10px;}
+
+.button {
+  background-color: #59331D;
+  border: none;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius:10px;}
+
+.map {color:#082B59}
+
+@media screen and (max-width: 1000px) {
+  .cardimg{display:none;}
+  
+  .mobimg{background-image:url("https://media.cnn.com/api/v1/images/stellar/prod/150929101049-black-coffee-stock.jpg?q=x_3,y_1231,h_1684,w_2993,c_crop/w_800");
+  height: 300px;
+  border-radius: 25px 25px 0 0;
+ background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;}
+  
+    .flex-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  text-align: left;
+  justify-content:space-between;
+  gap: 10px;
+  max-width:1000px;
+  margin:0px auto;}
+  
+  .card{
+    width:100%;
+  }
+  
+  .button{
+    width:100%;
+  }
+  
+  p{text-align:center;}
+  h1{text-align:center;}
