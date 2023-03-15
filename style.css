@@ -1,138 +1,192 @@
 /* see the brand guide for colors, fonts, and images in CodePen: 
 https://docs.google.com/document/d/13de5zlWmnox1BbZOiKo1p7tsirkgv0IQLG_bg1R60uE/edit?usp=sharing */
 
-
-h1{font-family: 'Poppins', sans-serif;}
-
-p{font-family: 'Lato', sans-serif;
-line-height: 200%;}
-
-.header{
-  background-color:#082B59;
-  color:white;
-  font-family: 'Lato', sans-serif;}
-
-a{
-color:white;
-font-family: 'Lato', sans-serif;}
-
-.footer{
-  background-color:#082B59;
-  color:white;
-  text-align: center;}
-
-.logo{
-  display:block;
-  width:120px;
-  margin: 0 auto;
+body {
+    background-color: #082B59;
+    margin: 0; // remove default margin
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
 }
-
-
-.navigation{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content:center;
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
 }
-
-.navigation > div{
-  width: 120px;
-  margin: 10px 0;
-  text-align: center;
-  line-height: 20px;
-  font-size: 14px;
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
 }
-
-.fa-solid{
-  color:white;
-  margin-right: 5px;
+/* make images flexible */
+img {
+    max-width: 100%;
 }
-
-.divider{
-  height:10px;
-    width:100%;
-  background-color:#D98555;
+a {
+    color: #59331d;
 }
-
-.card{
-  background-color:#59331D;
-  width:300px;
-  border-radius:10px;
-  }
-
-.card p{
-  color:white; 
-  margin:10px;
-  padding: 10px;
+a:hover {
+    text-decoration: none;
 }
-
-.cardimg
-{width:100%;
-  border-radius:25px 25px 0 0;
+header {
+    border-bottom: 10px solid #d98555;
 }
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  font-size: 16px;
-  text-align: left;
-  justify-content:center;
-  gap: 10px;
-  max-width:1000px;
-  margin:0px auto;
+/* navbar styling */
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
-
-.flex-item-left {
-  padding: 10px;
-  flex: 80%;
-  margin: 10px;
+nav li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
 }
-
-.flex-item-right {
-  padding: 10px;
-  flex: 100%;
-  margin:10px;}
-
+/* max width on the image in pixels */
+nav .logo img {
+    max-width: 150px;
+}
+/* flex basis on the image container, li */
+nav .logo {
+    flex-basis: 100%;
+    text-align: center;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+nav a:hover {
+    color: #d98555;
+}
+/* establishes a white background */
+.main-bkgd {
+    background: #ffffff url(https://assets.codepen.io/6306176/gulp-bean-bkgd.jpg) repeat-x bottom;
+    padding-bottom: 300px;
+}
+/* sits inside of the white background, centered */
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+article {
+    flex-basis: 73%;
+}
+figure {
+    margin: 3rem 0 0 0;
+    flex-basis: 25%;
+    background-color: #59331d;
+    border-radius: 10px;
+    max-width: 500px; // same as image
+}
+figure img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+figcaption {
+    color: #f2f2f2;
+    padding: 0.5rem;
+}
 .button {
-  background-color: #59331D;
-  border: none;
-  color: white;
-  font-family: 'Lato', sans-serif;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius:10px;}
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+}
+.button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
+}
+footer {
+    color: #f2f2f2;
+    text-align: center;
+    border-top: 10px solid #d98555;
+}
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+footer a {
+    color: #f2f2f2;
+    font-size: 2rem;
+    display: block;
+    margin: 0 1rem 3rem 1rem;
+    padding: 0;
+}
 
-.map {color:#082B59}
 
-@media screen and (max-width: 1000px) {
-  .cardimg{display:none;}
-  
-  .mobimg{background-image:url("https://media.cnn.com/api/v1/images/stellar/prod/150929101049-black-coffee-stock.jpg?q=x_3,y_1231,h_1684,w_2993,c_crop/w_800");
-  height: 300px;
-  border-radius: 25px 25px 0 0;
- background-position: center; 
-  background-repeat: no-repeat; 
-  background-size: cover;}
-  
-    .flex-container {
-  display: flex;
-  flex-direction: column;
-  font-size: 16px;
-  text-align: left;
-  justify-content:space-between;
-  gap: 10px;
-  max-width:1000px;
-  margin:0px auto;}
-  
-  .card{
-    width:100%;
-  }
-  
-  .button{
-    width:100%;
-  }
-  
-  p{text-align:center;}
-  h1{text-align:center;}
+
+@media (min-width: 320px) and (max-width: 600px) {
+    nav {
+        ul {
+            flex-flow: column nowrap;
+            align-items: center;
+        }
+        li {
+            margin: 1rem;
+        }
+    }
+    .main {
+        flex-flow: column wrap;
+    }
+    article {
+        .button {
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1000px) {
+    article {
+        flex-basis: 53%;
+    }
+    figure {
+        flex-basis: 43%;
+        max-width: 308px; // same as image
+        img {
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (min-width: 1001px) {
+    article {
+        flex-basis: 48%;
+    }
+    figure {
+        flex-basis: 48%;
+    }
+    nav {
+        ul {
+            flex-flow: row nowrap;
+        }
+        .logo {
+            text-align: start;
+            margin: 1rem;
+        }
+        li {
+            margin: 1rem 1rem 0rem 1rem;
+            display: flex;
+            align-items: center;
+            flex-flow: row nowrap;
+            gap: 3px;
+        }
+        a {
+            display: contents;
+        }
+    }
+}

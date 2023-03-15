@@ -2,73 +2,85 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - M17 Weekly Challenge: Gulp Roast About Page Challenge</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="https://kit.fontawesome.com/b70ca1675b.css" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
+  <title>CodePen - M18 (from LD)</title>
+  <link rel="stylesheet" href="./style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<!-- add a logo here, either light or dark depending on color scheme. Logo should link to the home page, use https://uxuicurriculum.wixsite.com/gulproast -->
+<!-- includes a few changes to the design since M17 -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
 
-<!--
-<img class="logo" src="https://assets.codepen.io/6306176/gulp-logo-dark.png" alt="dark logo"> </img> -->
+  <!-- needed for mobile view -->
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
 
-<section class ="header">
-<img class="logo" src="https://assets.codepen.io/6306176/gulp-logo-light.png" alt="light logo"> </img>
+  <title>CodePen - M17 Weekly Challenge: Gulp Roast About Page Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b70ca1675b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://kit.fontawesome.com/b70ca1675b.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
 
-<nav>
-  <div class="navigation">
-    <div><i class="fa-solid fa-mug-saucer"></i><a href=""> About </a></div>
-    <div><i class="fa-solid fa-mug-saucer"></i><a href="">Locations </a></div>
-    <div><i class="fa-solid fa-mug-saucer"></i><a href="">Contact </a></div>
-    </div>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="logo"><a href="https://uxuicurriculum.wixsite.com/gulproast"><img src="https://assets.codepen.io/6306176/gulp-logo-light.png" alt="Gulp Roast. Click for home." /></a></li>
+        <li><a href="https://uxuicurriculum.wixsite.com/gulproast"><span aria-hidden="true" class="fa-solid fa-mug-saucer"></span> About</a></li>
+        <li><a href="https://uxuicurriculum.wixsite.com/gulproast"><span aria-hidden="true" class="fa-solid fa-fire-flame-curved"></span> Products</a></li>
+        <li><a href="https://uxuicurriculum.wixsite.com/gulproast"><span aria-hidden="true" class="fa-solid fa-phone"></span> Contact</a></li>
+      </ul>
     </nav>
-<div class="divider"></div>
-</section>
-
-<br>
-<div class="flex-container">
-  <div class="flex-item-left">
-
-<h1>About Us</h1>
-
-<section class="content">
-<p>Life without coffee is a gloomy place. That’s why Gulp Roast has been proudly serving up fresh coffee to the <a class="map" href=https://goo.gl/maps/3rAyszfwSDx8Si2Y9>San Francisco area</a> since 2000. Our coffee is locally sourced with the most delicious blends coming directly to your home, right from coffee farmers near you. Our coffee makes even the most difficult days just a tad easier to get through.</p>
-
-<p>For us, this isn’t just brewing coffee. This is an active life mission to bring our customers the most flavorful, full-bodied beverages we can get our hands on. Browse our site to learn more about our locations and sourcing techniques.</p>
-
-  <button class="button"> Contact Us</button>
-  <br>
-  
- </div>
-  
-  <div class="flex-item-right">
-  <div class="card">
-<img src="https://assets.codepen.io/6306176/gulp-pouring-coffee-vertical.jpg" alt="Include an image with caption here." class="cardimg"> </img>
-    <div class="mobimg"></div>
-    <p>Our pour-over coffee is known for its freshness and amazing taste.</p>
-    </div></div>
-</section>
-
-</div>
-
-  <br>
-
-<section class="footer">
-  <div class="divider"></div>
-<p>(c) 2022 Gulp Roast Coffee. All rights reserved.</p>
-<a href="www.facebook.com">Facebook </a>
-<a href="www.twitter.com">Twitter </a>
-<a href="www.instagram.com">Instagram</a>
-  <br>
-  
-  </section>
+  </header>
+  <div class="main-bkgd">
+    <section class="main">
+      <article>
+        <h1>About Us</h1>
+        <p>Life without coffee is a gloomy place. That’s why Gulp Roast has been proudly serving up fresh coffee to the <a href="https://goo.gl/maps/3rAyszfwSDx8Si2Y9" target="_blank">San Francisco area</a> since 2000. Our coffee is locally sourced with the most delicious blends coming directly to your home, right from coffee farmers near you. Our coffee makes even the most difficult days just a tad easier to get through.</p>
+        <p>For us, this isn’t just brewing coffee. This is an active life mission to bring our customers the most flavorful, full-bodied beverages we can get our hands on. Browse our site to learn more about our locations and sourcing techniques.</p>
+        <a class="button" href="https://uxuicurriculum.wixsite.com/gulproast">Contact Us</a>
+      </article>
+      <figure>
+        <picture>
+          <source media="(max-width:600px)" srcset="https://assets.codepen.io/6306176/gulp-pouring-coffee-horizontal.jpg">
+          <source media="(min-width:601px) and (max-width:1000px)" srcset="https://assets.codepen.io/6306176/gulp-pouring-coffee-vertical.jpg">
+          <source media="(min-width:1001px)" srcset="https://assets.codepen.io/6306176/gulp-pouring-coffee-horizontal.jpg">
+          <img src="https://assets.codepen.io/6306176/gulp-pouring-coffee-horizontal.jpg" alt="Making pour-over coffee at our shop." />
+          <figcaption>Our pour-over coffee is known for its freshness and amazing taste.</figcaption>
+        </picture>
+      </figure>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2022 Gulp Roast Coffee. All rights reserved.</p>
+    <ul>
+      <li>
+        <a href="https://facebook.com" target="_blank">
+          <span aria-hidden="true" class="fa-brands fa-facebook-square"></span>
+          <span class="sr-only">Facebook</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com" target="_blank">
+          <span aria-hidden="true" class="fa-brands fa-twitter-square"></span>
+          <span class="sr-only">Twitter</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com" target="_blank">
+          <span aria-hidden="true" class="fa-brands fa-instagram-square"></span>
+          <span class="sr-only">Instagram</span>
+        </a>
+      </li>
+    </ul>
+  </footer>
+</body>
 <!-- partial -->
-  <script src='https://kit.fontawesome.com/b70ca1675b.js'></script><script  src="./script.js"></script>
-
+  
 </body>
 </html>
